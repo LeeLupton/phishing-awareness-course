@@ -260,3 +260,120 @@ footer nav a:active {
     background-color: #003f7f;
     transform: translateY(0);
 }
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+table thead th {
+    background-color: #007BFF;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Navigation Buttons */
+footer nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+footer nav a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+footer nav a:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+table thead th {
+    background-color: #007BFF;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tbody a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+table tbody a:hover {
+    text-decoration: underline;
+}
+
+table tbody td:first-child {
+    color: #FF4500; /* Red for phishing examples */
+}
+
+table tbody td:last-child {
+    color: #28A745; /* Green for legitimate examples */
+}
+
+/* Highlight Steps in Lists */
+ul li ol {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Enhance Section Styling */
+main section h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
