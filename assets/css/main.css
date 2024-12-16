@@ -8,13 +8,22 @@ body {
     line-height: 1.6;
 }
 
-h1, h2 {
+h1 {
+    color: rgb(255, 255, 255);
     margin: 0 0 10px;
-    color: #007BFF;
+}
+
+h2 {
+    color: rgb(4, 0, 255);
+    margin: 0 0 10px;
 }
 
 p {
     margin: 0 0 15px;
+}
+
+ul, ol {
+    padding-left: 20px;
 }
 
 a {
@@ -26,95 +35,102 @@ a:hover {
     text-decoration: underline;
 }
 
-ul, ol {
-    padding-left: 20px;
-}
-
 /* Header */
 header {
     background: #007BFF;
     color: white;
-    padding: 20px 10px;
+    padding: 30px 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
+/* Layout */
+.container {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #007BFF;
-    color: white;
-    border-color: #007BFF;
-}
-
-/* Main Section */
-main {
-    max-width: 800px;
+    flex-wrap: wrap;
+    max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 500px; /* Increased width to fit lesson names */
     background: white;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main section {
-    margin-bottom: 30px;
+main {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main section h2 {
+/* Sidebar */
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     border-bottom: 2px solid #007BFF;
     padding-bottom: 5px;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
 }
 
-main section ul, main section ol {
-    margin-top: 10px;
-    line-height: 1.8;
+.sidebar ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
 }
 
-main section ul li, main section ol li {
-    margin-bottom: 10px;
+.sidebar ol li {
+    display: flex;
+    justify-content: space-between; /* Align lesson name and status */
+    margin-bottom: 15px;
+    align-items: center;
 }
 
 .status {
     font-size: 0.9rem;
     font-weight: bold;
-    margin-left: 10px;
     color: #FF4500; /* Default locked color */
 }
 
 .status.unlocked {
     color: #28A745; /* Green for unlocked */
+}
+
+.locked {
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Main Content */
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+main ul {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+main ul li {
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -136,31 +152,21 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Locked Lessons */
-.locked {
-    pointer-events: none;
-    color: #aaa;
-}
-
-.locked:hover {
-    text-decoration: none;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
     header h1 {
         font-size: 2rem;
     }
 
-    nav ul {
-        flex-direction: column;
+    .sidebar {
+        min-width: 100%;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
+    main {
+        margin-top: 20px;
     }
 }
