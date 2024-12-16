@@ -1,0 +1,166 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+    color: #007BFF;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+/* Main Section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+main section ul, main section ol {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+main section ul li, main section ol li {
+    margin-bottom: 10px;
+}
+
+.status {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #FF4500; /* Default locked color */
+}
+
+.status.unlocked {
+    color: #28A745; /* Green for unlocked */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #f4f4f9;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Locked Lessons */
+.locked {
+    pointer-events: none;
+    color: #aaa;
+}
+
+.locked:hover {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
