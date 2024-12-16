@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Quiz: Phishing Awareness</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/final-quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Final Quiz: Phishing Awareness</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. What is a phishing email designed to do?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    Steal sensitive information or deliver malware
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    Provide legitimate offers from companies
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    Confirm your email address
+                </label>
+            </section>
+            <section>
+                <h2>2. Which of the following is a red flag in an email address?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    security@paypal.com
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    support@rnicrosoft.com
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    info@amazon.com
+                </label>
+            </section>
+            <section>
+                <h2>3. What should you do before clicking a link in an email?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Hover over it to inspect the destination URL
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Click it to see where it leads
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Assume it’s safe if it comes from someone you know
+                </label>
+            </section>
+            <section>
+                <h2>4. Which of these file types is most likely to be malicious?</h2>
+                <label>
+                    <input type="radio" name="q4" value="a">
+                    .pdf
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="b">
+                    .xlsm
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="c">
+                    .jpg
+                </label>
+            </section>
+            <section>
+                <h2>5. What is a common emotional trigger in phishing emails?</h2>
+                <label>
+                    <input type="radio" name="q5" value="a">
+                    Polite reminders
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="b">
+                    Threats or urgency
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="c">
+                    Neutral language
+                </label>
+            </section>
+            <section>
+                <h2>6. Why is it important to maintain a contact list?</h2>
+                <label>
+                    <input type="radio" name="q6" value="a">
+                    It ensures all emails are from legitimate sources
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="b">
+                    It helps identify emails from known senders
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="c">
+                    It prevents spam from reaching your inbox
+                </label>
+            </section>
+            <section>
+                <h2>7. What should you include when reporting a phishing email?</h2>
+                <label>
+                    <input type="radio" name="q7" value="a">
+                    The sender’s email address and email headers
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="b">
+                    A summary of your recent activity
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="c">
+                    Your account password for verification
+                </label>
+            </section>
+            <section>
+                <h2>8. What is the safest way to access a known website?</h2>
+                <label>
+                    <input type="radio" name="q8" value="a">
+                    Click the link in the email
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="b">
+                    Search for the website manually in your browser
+                </label><br>
+                <label>
+                    <input type="radio" name="q8" value="c">
+                    Use any link you find online
+                </label>
+            </section>
+            <section>
+                <h2>9. How should you handle unexpected attachments in emails?</h2>
+                <label>
+                    <input type="radio" name="q9" value="a">
+                    Open them immediately to check their contents
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="b">
+                    Scan them with antivirus software before opening
+                </label><br>
+                <label>
+                    <input type="radio" name="q9" value="c">
+                    Ignore them if the sender is unfamiliar
+                </label>
+            </section>
+            <section>
+                <h2>10. What is a red flag in a suspicious email attachment?</h2>
+                <label>
+                    <input type="radio" name="q10" value="a">
+                    A file with a specific name, like “Contract_2023.docx”
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="b">
+                    A generic file name, like “invoice.zip”
+                </label><br>
+                <label>
+                    <input type="radio" name="q10" value="c">
+                    A file shared from a known colleague
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>

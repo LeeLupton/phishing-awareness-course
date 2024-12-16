@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3: Verifying Links in Emails</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/quiz03.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz 3: Verifying Links in Emails</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. Which of these is a red flag in a link?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    A link with a familiar domain like <strong>https://www.amazon.com</strong>
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    A link with a misspelling, such as <strong>https://www.amaz0n.com</strong>
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    A link with HTTPS protocol
+                </label>
+            </section>
+            <section>
+                <h2>2. What should you do before clicking a link in an email?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Hover over the link to inspect the destination URL
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Click it to see where it goes
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Copy and paste the link directly into your browser
+                </label>
+            </section>
+            <section>
+                <h2>3. What is the safest way to access a known website?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Click the link provided in the email
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Search for the website in your browser manually
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Trust links from unknown senders
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>

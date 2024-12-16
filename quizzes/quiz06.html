@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 6: Adding Known Contacts</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/quiz06.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz 6: Adding Known Contacts</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. Why is it important to add known contacts to your address book?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    It helps prioritize legitimate emails and identify suspicious ones
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    It blocks spam emails from being sent to your inbox
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    It ensures all emails are automatically forwarded
+                </label>
+            </section>
+            <section>
+                <h2>2. What should you do if you receive an email from an unfamiliar sender?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Add the sender to your contacts without verifying
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Verify the sender's identity before taking action
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Ignore the email and delete it
+                </label>
+            </section>
+            <section>
+                <h2>3. Which of these is a best practice for managing your contacts?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Add contacts from unsolicited emails to save time
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Regularly update your contact list and remove inactive entries
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Share your contact list with others to avoid duplication
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>

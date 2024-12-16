@@ -1,0 +1,68 @@
+/* General Quiz Styles */
+form section {
+    margin-bottom: 20px;
+}
+
+form section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+button#submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Quiz Results Section */
+#quiz-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#quiz-result.hidden {
+    display: none;
+}
+
+#quiz-result h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#quiz-result p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#quiz-result button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #28A745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-result button:hover {
+    background-color: #218838;
+}

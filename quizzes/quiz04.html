@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 4: Identifying Phishing Attachments</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/quiz04.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz 4: Identifying Phishing Attachments</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. Which of these file types is especially risky?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    .docx
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    .xlsm
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    .pdf
+                </label>
+            </section>
+            <section>
+                <h2>2. What should you do with an unexpected attachment from an unknown sender?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Open it to see if it’s important
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Scan it with antivirus software and verify the sender
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Delete it without checking
+                </label>
+            </section>
+            <section>
+                <h2>3. Which of these is a common red flag in a suspicious attachment?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    A file with a generic name like “invoice.zip”
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    A file shared via a secure link
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    A signed document from a known sender
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>

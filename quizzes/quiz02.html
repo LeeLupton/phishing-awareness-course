@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2: Recognizing Suspicious Email Addresses</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/quiz02.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz 2: Recognizing Suspicious Email Addresses</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. What is a common red flag in suspicious email addresses?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    An email address with a verified domain, such as <strong>@company.com</strong>
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    Misspellings or extra characters, such as <strong>@rnicrosoft.com</strong>
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    A sender you recognize
+                </label>
+            </section>
+            <section>
+                <h2>2. Which of these is an example of a legitimate email address?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    support@amaz0n.com
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    customerservice@amazon.com
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    support@paypal-secure.com
+                </label>
+            </section>
+            <section>
+                <h2>3. What should you do if you notice an unfamiliar email address?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Reply to the sender for clarification
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Verify the sender's identity using official contact information
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Ignore it and delete the email
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>

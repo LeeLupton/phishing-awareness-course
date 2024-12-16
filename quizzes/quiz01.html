@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1: Introduction to Phishing</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/quiz01.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz 1: Introduction to Phishing</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. What is a phishing email?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    An email that promotes sales during the holiday season
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    An email designed to steal sensitive information or install malware
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    A legitimate email from your bank
+                </label>
+            </section>
+            <section>
+                <h2>2. Which of these is a common characteristic of phishing emails?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Personalized greetings with your full name
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    A suspicious sender address or unexpected request
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Email sent only during office hours
+                </label>
+            </section>
+            <section>
+                <h2>3. What should you do if you receive a suspicious email?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Click the links to check if they are legitimate
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Open any attachments to verify the contents
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Verify the sender and report the email if necessary
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>

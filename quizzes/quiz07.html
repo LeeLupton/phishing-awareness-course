@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 7: Reporting Suspicious Emails</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/quizzes.css">
+    <script src="../assets/js/quiz07.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz 7: Reporting Suspicious Emails</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section>
+                <h2>1. Why should you report phishing emails?</h2>
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    To notify the sender that the email was received
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    To protect yourself and others from future attacks
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    To ensure the email is permanently deleted
+                </label>
+            </section>
+            <section>
+                <h2>2. Which of the following information should you include when reporting a phishing email?</h2>
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    The full email headers and a description of why it's suspicious
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Only the sender's name
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    A list of your recent passwords
+                </label>
+            </section>
+            <section>
+                <h2>3. How can you report phishing emails in Gmail?</h2>
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    By replying to the email with a warning
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    By clicking the three vertical dots and selecting "Report phishing"
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    By forwarding it to a colleague
+                </label>
+            </section>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="quiz-result" class="hidden">
+            <h2>Your Results</h2>
+            <p id="result-message"></p>
+            <button onclick="window.location.href='../index.html'">Back to Course Outline</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Putnam Real Estate Co. All rights reserved. <a href="mailto:bigleelup10@gmail.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>
