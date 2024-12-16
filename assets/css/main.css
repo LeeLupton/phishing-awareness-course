@@ -170,3 +170,93 @@ footer a:hover {
         margin-top: 20px;
     }
 }
+
+/* Lesson Header */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Lesson Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+main p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+main ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #f4f4f9;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+/* Footer Navigation Buttons */
+footer nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+footer nav a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+footer nav a:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+}
